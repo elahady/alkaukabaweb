@@ -2,6 +2,21 @@
 
 Laravel 12. Situs "Al-Kaukaba" (Ilmu Hisab Rukyat Lamongan) — landing page + backend API auth untuk app Android `alkaukabaandroid`.
 
+## Status Pengembangan
+
+_Diperbarui 17 Oktober 2026. **Direkonstruksi dari `git log` dan dokumen repo, belum diverifikasi pemilik** — koreksi butir yang keliru. Potret keadaan sekarang, bukan log: ubah di tempat setiap selesai pekerjaan nyata (skill `catat-progres`); riwayat ada di `git log`._
+
+Backend produksi Al-Kaukaba (Laravel 12): landing page, auth API untuk app Android, Doa & Dzikir. Tracking rinci di Notion lewat skill `pengembangan-alkaukaba`.
+
+### Sudah selesai
+- Auth API: register, login, Google Sign-In, token Sanctum, upload dan hapus avatar.
+- Halaman publik Hapus Akun (untuk Data safety Play Store), fitur Doa & Dzikir (Al-Mathurat/Hisnul Muslim), endpoint kutipan harian (ayat/hadits) tanpa cache untuk hasil fallback. Commit terakhir: 2026-09-14.
+
+### Belum selesai / berikutnya
+1. **Perlu dikonfirmasi pemilik:** apakah commit terakhir (endpoint kutipan harian) sudah di-`git pull` dan di-deploy di VPS produksi. Deploy manual tanpa CI/CD, jadi repo ini tidak mencatatnya.
+2. Test suite masih skeleton; endpoint `AuthController`/`CircleMemberController` hanya dites manual (lihat README, "Konvensi kode").
+3. Belum ada daftar fitur backend berikutnya yang tercatat di repo.
+
 ## ⚠️ Ini backend produksi yang BENAR — jangan bingung dengan `alkaukabawebserver`
 
 Repo ini (`C:\Project\personal\alkaukabaweb`) adalah satu-satunya backend yang
