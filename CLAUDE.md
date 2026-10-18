@@ -35,6 +35,10 @@ bukan di `alkaukabawebserver`.
 
 **Sebelum menulis atau mengubah kode di project ini, baca [README.md](README.md) bagian "Konvensi kode"** — mencakup aturan validasi input, bentuk response JSON (termasuk larangan membocorkan pesan exception mentah ke client), dan gaya kode (Pint). Konvensi itu wajib diikuti untuk kode baru maupun perubahan pada kode lama.
 
+## Aturan Git
+
+Ikut aturan global repo personal (lihat `CLAUDE.md` di `C:\Project\Personal`): **setiap perubahan langsung di-commit lalu di-push** ke `origin main`, tanpa menunggu diminta — push ke GitHub **tidak** otomatis men-deploy ke VPS (deploy tetap manual via `git pull` di server, lihat "Deploy workflow" di bawah).
+
 ## Infrastruktur produksi
 
 - **VPS**: `root@202.155.17.2` (SSH config lokal: host alias `server-al-kaukaba`), project di `/var/www/alkaukaba`.
